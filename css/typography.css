@@ -1,6 +1,6 @@
-body								{ font-size: 75%; line-height: 1.5; font-family: Arial, Helvetica, sans-serif; /*12/18*/ }
+body								{ font-size: 75%; line-height: 1.5; font-family: 'Open Sans'; /*12/18*/ }
 
-h1, h2, h3, h4, h5, h6				{ position: relative; font-weight: 400; }
+h1, h2, h3, h4, h5, h6				{ position: relative; font-weight: 200; }
 h1									{ line-height: 44px; margin-bottom: 26px; }
 h2									{ line-height: 36px; margin-bottom: 18px; }
 h1, h2, h3, h4						{ margin-top: 18px; }

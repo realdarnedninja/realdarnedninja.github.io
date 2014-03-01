@@ -108,7 +108,8 @@ body {
 
 #contact img {
 	margin-top: 18px;
-	width: 100%;	
+	width: 75px;
+	max-width: 100%;	
 }
 
 #footer {

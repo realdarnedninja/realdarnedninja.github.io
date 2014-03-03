@@ -3,19 +3,31 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
-	<title>Daniel Rajendran - Multi-role designer</title>
-	<meta name="author" content="Daniel Rajendran" />
-	<meta name="description" content="I'm a multi-role designer, living and working in London. I've have four years experience working as a jack of all trades in the marketing team at Huddle, a fast-paced startup." />
 	<meta name="Resource-type" content="Document" />
-	<meta property="og:title" content="Daniel Rajendran - Multi-role designer" />
-	<meta property="og:description" content="'m a multi-role designer, living and working in London. I've have four years experience working as a jack of all trades in the marketing team at Huddle, a fast-paced startup." />
-	<meta property="og:image" content="http:/realdarnedninja.github.io/img/og-share.jpg">
-	<meta property="og:image:type" content="image/png">
-	<meta property="og:image:width" content="1500">
-	<meta property="og:image:height" content="784">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1 "/>
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	
+	<!-- for Search -->
+	<title>Daniel Rajendran - Multi-role designer</title>
+	<meta name="description" content="I'm a multi-role designer, living and working in London. I have four years experience working as a jack of all trades in the marketing team at Huddle, a fast-paced startup." />
+	<meta name="keywords" content="" />
+	<meta name="author" content="Daniel Rajendran" />
+	<meta name="copyright" content="" />
+	<meta name="application-name" content="" />
+	
+	<!-- for Facebook -->          
+	<meta property="og:title" content="Daniel Rajendran - Multi-role designer" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="http://realdarnedninja.github.io/img/og-share.jpg">
+	<meta property="og:url" content="http://realdarnedninja.github.io/" />
+	<meta property="og:description" content="I'm a multi-role designer, living and working in London. I have four years experience working as a jack of all trades in the marketing team at Huddle, a fast-paced startup." />
+	
+	<!-- for Twitter -->          
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Daniel Rajendran - Multi-role designer" />
+	<meta name="twitter:description" content="I'm a multi-role designer, living and working in London. I have four years experience working as a jack of all trades in the marketing team at Huddle, a fast-paced startup." />
+	<meta name="twitter:image" content="http://realdarnedninja.github.io/img/og-share-sq.jpg" />
 
 	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
@@ -37,10 +49,11 @@
 		$(document).ready(function() {
 			$.fn.fullpage({
 				verticalCentered: true,
-				resize : true,
 				scrollingSpeed: 600,
 				easing: 'easeInQuart',
-				css3: true
+				anchors:['Intro', 'About', 'Work', 'Contact'],
+				touchScrolling: true,
+				scrollOverflow: true
 			});
 		});
 	</script>
@@ -58,10 +71,10 @@
 	
 	<div class="section" id="about">
 		<div class="grid-container">
-			<img id="profile-picture" src="img/profile-picture.jpg" alt="Daniel Rajendran - Multi-role designer" />
+			<img id="profile-picture" class="hide-on-mobile" src="img/profile-picture.jpg" alt="Daniel Rajendran - Multi-role designer" />
 			<h1>Hi! My name is <strong>Daniel</strong>.</h1>
 			<div class="grid-50">
-				<p>I'm a 20-something multi-role designer, living and working in London. I've have four years experience working as a jack of all trades in the marketing team at <a href="http://www.huddle.com">Huddle</a>, a fast-paced startup.</p>
+				<p>I'm a 20-something multi-role designer, living and working in London. I have four years experience working as a jack of all trades in the marketing team at <a href="http://www.huddle.com">Huddle</a>, a fast-paced startup.</p>
 			</div>
 			<div class="grid-50">
 				<p>Since graduating in 2010 I've performed many roles, from web developer to project manager, email marketer to print artist. Regardless of the job title, at heart, I just love designing and building things.

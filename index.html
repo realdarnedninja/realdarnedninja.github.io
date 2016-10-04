@@ -29,12 +29,13 @@
 	<meta name="twitter:description" content="Designer, developer, and general jack of all trades in marketing." />
 	<meta name="twitter:image" content="http://realdarnedninja.github.io/img/og-share-sq.jpg" />
 
-	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/unsemantic.css" />
 	<link rel="stylesheet" href="css/typography.css" />
 	<link rel="stylesheet" href="css/site.css" />
+	<link rel="stylesheet" href="css/animate.css">
 
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -42,72 +43,144 @@
 		</script>
 	<![endif]-->
 		
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="js/typed.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$.fn.fullpage({
+			 $('#fullpage').fullpage({
 				verticalCentered: true,
 				scrollingSpeed: 600,
 				easing: 'easeInQuart',
-				anchors:['Intro', 'About', 'Work', 'Contact'],
+				anchors:['section-intro', 'section-about', 'section-designer', 'section-developer', 'section-marketer', 'section-work', 'section-contact', 'section-elsewhere'],
 				touchScrolling: true,
-				scrollOverflow: true
+				scrollOverflow: false
 			});
+
+			 $(".typed").typed({
+				strings: ["^1000 a designer", "a developer", "a marketer", "Daniel Rajendran^5000", "a Londoner", "31^500", "a story teller", "a HAL 9000 computer", "a geek", "a creator", "Iron Man", "a tinkerer", "a leaf on the wind", "an explorer", "an adventurer", "a dungeon master", "a builder", "legend", "a prototyper", "a wizard", "a gamer", "a movie fanatic", "the one who knocks", "a baker", "a bookworm", "Groot", "^500.^500.^500."],
+				typeSpeed: 35,
+				startDelay: 1000,
+				backSpeed: 20,
+				preStringTyped: function() {
+					// 
+				},
+				callback: function() {
+					//
+				}
+			});
+
+			setTimeout(
+				function() 
+				{
+					$(".scroll-tip").html('<div class="animated flash infinite">SCROLL DOWN</div>');
+				}, 10000);
 		});
 	</script>
 
 </head>
 <body>
-	<div class="section active" id="intro">
-		<div class="grid-container">
-			<img id="logo" src="img/logo.svg" alt="Daniel Rajendran" width="100" height="100" />
-			<h1><strong>Daniel Rajendran</strong>.</h1>
-			<h2>I like designing and making <strong>fun stuff</strong>.</h2>
-		</div>
-	</div>
-	
-	
-	<div class="section" id="about">
-		<div class="grid-container">
-			<img id="profile-picture" class="hide-on-mobile" src="img/profile-picture.jpg" alt="Daniel Rajendran - Multi-role designer" />
-			<h1>Hi! My name is <strong>Daniel</strong>.</h1>
-			<div class="grid-50">
-				<p>I'm a 20-something multi-role designer, living and working in London. I have four years experience working as a jack of all trades in the marketing team at <a href="http://www.huddle.com">Huddle</a>, a fast-paced startup.</p>
+	<div id="fullpage">
+		<div class="section" id="intro">
+			<div class="grid-container">
+				<img src="img/hex-logo.svg" id="logo" class="animated bounceInUp" title="Daniel Rajendran logo" alt="I am Daniel Rajendran" />
+				<h1 class="animated bounceInUp">I am <strong class="typed"></strong></h1>
 			</div>
-			<div class="grid-50">
-				<p>Since graduating in 2010 I've performed many roles, from web developer to project manager, email marketer to print artist. Regardless of the job title, at heart, I just love designing and building things.
+			<div class="scroll-tip"></div>
+		</div>
+		
+		
+		<div class="section" id="about">
+			<div class="grid-container">
+				<img src="img/hex-photo.png" class="" title="Daniel Rajendran profile photo" alt="I am Daniel Rajendran" />
+				<h1>Hi! My name is <strong>Daniel</strong></h1>
+				<p>I'm a digital jack-of-all-trades, working and living in London. I have seven years of experience performing a wide variety of roles with fast-paced tech startups.</p>
+				<p>Since graduating with a BSc in Computing &amp; Interaction Design, I've performed many roles, from web developer to project manager, email marketer to print artist. Regardless of the job title, at heart, I just love designing and building things.<p>
 			</div>
 		</div>
-	</div>
-	
-	
-	<div class="section" id="work">
-		<div class="grid-container">
-			<h1>See <strong>my work</strong> soon.</h1>
-			<h2>In the meantime, <a href="files/daniel-rajendran-multi-role-designer.pdf" class="cv-link">check out my CV</a>.</h2>
+		
+		
+		<div class="section" id="designer">
+			<div class="grid-container">
+				<img src="img/hex-designer.svg" class="hex-icon" title="Daniel Rajendran - Designer" alt="Daniel Rajendran - Designer" />
+				<h1><strong>Design</strong> is in the details</h1>
+				<p>Like every teenager with a computer, I started out using Photoshop to slap filters on things. When I grew up and started designing for the web, I moved to Fireworks. When I had to design artwork for a conference, my googling lead me to Illustrator. When I needed to design detailed datasheets and brochures, I discovered InDesign. When I got the taste for UX and wanted to make application mockups, I found Sketch.</p>
+				<p>My design preferences are always evolving, but whether its a photo, logo, illustration, application mockup, or document, I know which application is the best fit, and how to use it.</p>
+			</div>
 		</div>
-	</div>
-	
-	
-	<div class="section" id="contact">
-		<div class="grid-container">
-		<h1>Want to <strong>get in touch</strong>?</h1>
-		<h2>You can find me here:</h2>
-			<div class="grid-10 mobile-grid-20 tablet-grid-15 mobile-prefix-10 tablet-prefix-20 prefix-30">
-				<a href="mailto:daniel.rajendran@gmail.com"><img src="img/icon-email.svg" alt="" /></a>
+
+
+		<div class="section" id="developer">
+			<div class="grid-container">
+				<img src="img/hex-developer.svg" class="hex-icon" title="Daniel Rajendran - Web Developer" alt="Daniel Rajendran - Web Developer" />
+				<h1>Built to <strong>code</strong></h1>
+				<p>I'm primaryily a front-end web developer, using HTML, CSS, and javascript to create web content, but I've also done a little bit of back-end PHP to support front-end features. I've worked on various different CMS systems, from the super lightweight Jekyll, to the highly customisable WordPress, for which I have also designed themes and written plugins.</p>
+				<p>As I've primarily been the only web developer in my team, I've been involved in all stages of bringing a website to life. Whether it be spinning up new server instances, turning the team's ideas into high-fidelity mockups, turning those mockups into working code, or cross-browser testing the final product before release, I've tried my hand at everything.</p>
 			</div>
-			<div class="grid-10 mobile-grid-20 tablet-grid-15">
-				<a href="https://twitter.com/shadowise"><img src="img/icon-twitter.svg" alt="" /></a>
+		</div>
+
+
+		<div class="section" id="marketer">
+			<div class="grid-container">
+				<img src="img/hex-marketer.svg" class="hex-icon" title="Daniel Rajendran - Marketer" alt="Daniel Rajendran - Marketer" />
+				<h1><strong>Marketing</strong> made easy</h1>
+				<p>As part of a marketing team, I've been responsible for implementing and using various different EMS and CRM systems, such as Aprimo, SalesForce, Eloqua, MailChimp and Marketo.</p>
+				<p>This included integrating the systems with our websites, designing and implementing emails and forms, and creating and managing emails and campaigns.</p>
+				<p>While managing various marketing and blog sites, I've also been responsible for search engine optimisation, studying site analytics, site optimisation, and A/B testing.</p>
 			</div>
-			<div class="grid-10 mobile-grid-20 tablet-grid-15">
-				<a href="https://www.facebook.com/Shadowise"><img src="img/icon-facebook.svg" alt="" /></a>
+		</div>
+		
+		
+		<div class="section" id="cv">
+			<div class="grid-container">
+				<img src="img/hex-work.svg" class="hex-icon" title="Daniel Rajendran CV" alt="Daniel Rajendran CV" />
+				<h1>See <strong>my work</strong> soon</h1>
+				<h2>In the meantime, <a href="files/daniel-rajendran-multi-role-designer.pdf" class="cv-link">check out my CV</a>.</h2>
 			</div>
-			<div class="grid-10 mobile-grid-20 tablet-grid-15 mobile-suffix-10 tablet-suffix-20 suffix-30">
-				<a href="http://uk.linkedin.com/pub/daniel-rajendran/25/697/808/"><img src="img/icon-linkedin.svg" alt="" /></a>
+		</div>
+		
+		
+		<div class="section" id="contact">
+			<div class="grid-container">
+				<img src="img/hex-contact.svg" class="hex-icon" title="Daniel Rajendran contact information" alt="Daniel Rajendran contact information" />
+				<h1>Want to <strong>get in touch</strong>?</h1>
+				<h2>You can find me here:</h2>
+				<div class="grid-10 mobile-grid-20 tablet-grid-15 mobile-prefix-10 tablet-prefix-20 prefix-30">
+					<a href="mailto:daniel.rajendran@gmail.com"><img src="img/icon-email.svg" alt="" /></a>
+				</div>
+				<div class="grid-10 mobile-grid-20 tablet-grid-15">
+					<a href="https://twitter.com/shadowise"><img src="img/icon-twitter.svg" alt="" /></a>
+				</div>
+				<div class="grid-10 mobile-grid-20 tablet-grid-15">
+					<a href="https://www.facebook.com/Shadowise"><img src="img/icon-facebook.svg" alt="" /></a>
+				</div>
+				<div class="grid-10 mobile-grid-20 tablet-grid-15 mobile-suffix-10 tablet-suffix-20 suffix-30">
+					<a href="http://uk.linkedin.com/pub/daniel-rajendran/25/697/808/"><img src="img/icon-linkedin.svg" alt="" /></a>
+				</div>
+				<div class="clear"></div>
 			</div>
-			<div class="clear"></div>
+		</div>
+		
+		
+		<div class="section" id="elsewhere">
+			<div class="grid-container">
+				<img src="img/hex-elsewhere.svg" class="hex-icon" title="Daniel Rajendran social media" alt="Daniel Rajendran social media" />
+				<h1>Want to find me <strong>elsewhere</strong>?</h1>
+				<div class="grid-10 mobile-grid-20 tablet-grid-15 mobile-prefix-10 tablet-prefix-20 prefix-30">
+					<a href="https://www.instagram.com/realdarnedninja/"><img src="img/icon-instagram.svg" alt="" /></a>
+				</div>
+				<div class="grid-10 mobile-grid-20 tablet-grid-15">
+					<a href="http://www.last.fm/user/shadowise"><img src="img/icon-lastfm.svg" alt="" /></a>
+				</div>
+				<div class="grid-10 mobile-grid-20 tablet-grid-15">
+					<a href="http://steamcommunity.com/id/shadowise"><img src="img/icon-steam.svg" alt="" /></a>
+				</div>
+				<div class="grid-10 mobile-grid-20 tablet-grid-15 mobile-suffix-10 tablet-suffix-20 suffix-30">
+					<a href="http://www.trueachievements.com/Shadowise.htm"><img src="img/icon-xbox.svg" alt="" /></a>
+				</div>
+				<div class="clear"></div>
+			</div>
 		</div>
 	</div>
 </body>

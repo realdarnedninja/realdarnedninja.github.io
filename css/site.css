@@ -112,8 +112,11 @@ body {
 	background: #58266F;
 }
 
-#cv .cv-link {
-	border-bottom: 1px dotted #FFFFFF;	
+#cv img { margin: 20px 0 10px 0; }
+
+#cv p { text-align: center; }
+
+#cv a p {
 	text-decoration: none;
 	color: #FFFFFF;
 }

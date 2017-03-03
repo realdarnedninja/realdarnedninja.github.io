@@ -187,6 +187,10 @@ q:after {
 	content: none;
 }
 
+a {
+	text-decoration: none;
+}
+
 sub,
 sup,
 small {

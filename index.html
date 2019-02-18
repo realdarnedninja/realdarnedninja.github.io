@@ -45,58 +45,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/typed.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			 $(".typed").typed({
-				strings: ["^1000 a designer", "a developer", "a marketer", "Daniel Rajendran^5000", "looking for a new challenge", "a Londoner", "an 80s kid", "a story teller", "always learning", "a geek", "a creator", "Iron Man", "a tinkerer", "a leaf on the wind", "an explorer", "a HAL 9000 computer", "an illustrator", "an adventurer", "a dungeon master", "a writer", "a master builder", "Legend", "a prototyper", "a wizard", "a gamer", "a movie fanatic", "the one who knocks", "a baker", "a Pokémon Master", "a bookworm", "Groot", "Daniel Rajendran"],
-				typeSpeed: 35,
-				startDelay: 1000,
-				backSpeed: 20,
-				preStringTyped: function() {
-					// 
-				},
-				callback: function() {
-					//
-				}
-			});
-			var $header = $('body'),
-				scrollClass = 'on-scroll',
-				activateAtY = 200;
-
-			function deactivateHeader() {
-				if (!$header.hasClass(scrollClass)) {
-					$header.addClass(scrollClass);
-				}
-			}
-
-			function activateHeader() {
-				if ($header.hasClass(scrollClass)) {
-					$header.removeClass(scrollClass);
-				}
-			}
-
-			$(window).scroll(function() {
-				if($(window).scrollTop() > activateAtY) {
-					deactivateHeader();
-				} else {
-					activateHeader();
-				}
-			});
-
-			$('a[href^="#"]').on('click',function (e) {
-				e.preventDefault();
-
-				var target = this.hash;
-				var $target = $(target);
-
-				$('html, body').stop().animate({
-					'scrollTop': $target.offset().top
-				}, 900, 'swing', function () {
-					window.location.hash = target;
-				});
-			});
-		});
-	</script>
+	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
 	<div id="header">

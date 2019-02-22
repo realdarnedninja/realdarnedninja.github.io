@@ -79,7 +79,7 @@ body {
 	background: #005083;
 	height: 100%;
 	min-height: 600px;
-	animation: colour-fade-bg 45s linear infinite;
+	animation: colour-fade-bg 60s linear infinite;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

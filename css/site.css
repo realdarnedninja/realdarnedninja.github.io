@@ -200,6 +200,11 @@ body {
 	text-align: center;
 }
 
+#work h2 {
+	color: #666666;
+	margin-bottom: 36px;
+}
+
 .work-item {
 	position: relative;
 	overflow: hidden;

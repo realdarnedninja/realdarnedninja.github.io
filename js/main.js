@@ -78,7 +78,7 @@ var myEvents = [
 	},
 	{
 		date: '<img src="img/story-logo-datasift.svg" id="" title="DataSift logo" alt="DataSift" />',
-		content: '<strong>Front-End Designer/Developer</strong></br><span class="font-small">Lead design and coding for marketing websites, and supported the product team with UX/UI work</span>'
+		content: '<strong>Front-End Designer</strong></br><span class="font-small">Lead design and coding for marketing websites, and supported the product team with UX/UI work</span>'
 	},
 	{
 		date: '<img src="img/story-logo-content-code.svg" id="" title="Content and Code logo" alt="Content and Code" />',

@@ -77,6 +77,10 @@ img {
   font-weight: 700;
 }
 
+.font-small {
+  font-size: 0.875rem;
+}
+
 /* POSITIONING */
 
 .left {

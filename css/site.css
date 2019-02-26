@@ -179,7 +179,7 @@ body {
 }
 
 #journey {
-	padding: 72px 36px 108px 36px;
+	padding: 72px 36px 72px 36px;
 	background: #FFFFFF;
 	text-align: center;
 }
@@ -342,10 +342,6 @@ body {
 	#my-timeline {
 		min-height: 930px;
 	}
-	#journey {
-		padding-bottom: 90px;
-	}
-
 	.roadmap__events {
 		width: 90% !important;
 	}
@@ -368,7 +364,7 @@ body {
 
 @media only screen and (max-width: 600px) {
 	#journey {
-		padding: 72px 9px 108px 9px;
+		padding: 72px 9px 72px 9px;
 	}
 	#my-timeline {
 		min-height: 1000px;

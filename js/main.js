@@ -86,7 +86,7 @@ var myEvents = [
 	},
 	{
 		date: '<img src="img/story-logo-next.svg" id="" title="The Next Adventure" alt="The Next Adventure" />',
-		content: '<strong>An Exciting New Role</strong></br><span class="font-small">I&#39;m currently looking for interesting new opportunities. If you&#39;re looking for a multi-talented designer, <a href="#contact" title="get in touch">let&#39;s talk</a>.</span>'
+		content: '<strong>An Exciting New Role</strong></br><span class="font-small">I&#39;m currently looking for interesting new opportunities. If you&#39;re looking for a multi-talented designer, let&#39;s talk.</span>'
 	}
 ];
 

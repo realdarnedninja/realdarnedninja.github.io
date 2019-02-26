@@ -190,8 +190,20 @@ body {
 }
 
 #journey a {
-	text-decoration: underline;
-	color: 666666;
+	height: 50px;
+	width: 250px;
+	animation: colour-fade-bg 60s linear infinite;
+	text-decoration: none;
+	display: inline-block;
+	line-height: 50px;
+	border-radius: 5px;
+}
+
+#journey a span {
+	color: #FFFFFF;
+	font-weight: 700;
+	line-height: 50px;
+	text-transform: uppercase;
 }
 
 
@@ -313,6 +325,10 @@ body {
 }
 
 @media only screen and (min-width: 1201px) {
+	#my-timeline {
+		min-height: 450px;
+		margin-bottom: 36px;
+	}
 	.roadmap__events__event:nth-child(odd) .event {
 		top: 61px !important;
 	}
@@ -323,6 +339,9 @@ body {
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 601px) {
+	#my-timeline {
+		min-height: 930px;
+	}
 	#journey {
 		padding-bottom: 90px;
 	}
@@ -351,6 +370,9 @@ body {
 	#journey {
 		padding: 72px 9px 108px 9px;
 	}
+	#my-timeline {
+		min-height: 1000px;
+	}
 	.roadmap__events {
 		width: 90% !important;
 	}
@@ -367,11 +389,5 @@ body {
 	.roadmap__events__event:nth-child(even) .event {
 		margin-right: -25px !important;
 		bottom: auto !important;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	#journey {
-		padding: 72px 9px 162px 9px;
 	}
 }

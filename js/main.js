@@ -85,9 +85,14 @@ var myEvents = [
 		content: '<strong>Product Designer</strong></br><span class="font-small">Lead design efforts for Fresh Intranet and Fresh Mobile, whilst helping the bids and marketing teams</span>'
 	},
 	{
-		date: '<img src="img/story-logo-next.svg" id="" title="The Next Adventure" alt="The Next Adventure" />',
-		content: '<strong>An Exciting New Role</strong></br><span class="font-small">I&#39;m currently looking for interesting new opportunities. If you&#39;re looking for a multi-talented designer, let&#39;s talk.</span>'
+		date: '<img src="img/story-logo-concirrus.svg" id="" title="Concirrus logo" alt="Concirrus" />',
+		content: '<strong>Senior Product Designer</strong></br><span class="font-small">Primary designer for Quest Automotive, and key part of introducing a cross-product design system</span>'
 	}
+	//,
+	//{
+	//	date: '<img src="img/story-logo-next.svg" id="" title="The Next Adventure" alt="The Next Adventure" />',
+	//	content: '<strong>An Exciting New Role</strong></br><span class="font-small">I&#39;m currently looking for interesting new opportunities. If you&#39;re looking for a multi-talented designer, let&#39;s talk.</span>'
+	//}
 ];
 
 $(window).on('resize scroll', function() {

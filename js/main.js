@@ -11,29 +11,6 @@ $(document).ready(function() {
 			//
 		}
 	});
-	var $header = $('body'),
-		scrollClass = 'on-scroll',
-		activateAtY = 200;
-
-	function deactivateHeader() {
-		if (!$header.hasClass(scrollClass)) {
-			$header.addClass(scrollClass);
-		}
-	}
-
-	function activateHeader() {
-		if ($header.hasClass(scrollClass)) {
-			$header.removeClass(scrollClass);
-		}
-	}
-
-	$(window).scroll(function() {
-		if($(window).scrollTop() > activateAtY) {
-			deactivateHeader();
-		} else {
-			activateHeader();
-		}
-	});
 
 	$('a[href^="#"]').on('click',function (e) {
 		e.preventDefault();
@@ -66,15 +43,7 @@ var myEvents = [
 	},
 	{
 		date: '<img src="img/story-logo-huddle.svg" id="" title="Huddle logo" alt="Huddle" />',
-		content: '<strong>Design Intern</strong></br><span class="font-small">Assisted the marketing team with various web and print design tasks, as well as helping at events</span>'
-	},
-	{
-		date: '<img src="img/story-logo-huddle.svg" id="" title="Huddle logo" alt="Huddle" />',
-		content: '<strong>Junior Designer</strong></br><span class="font-small">Designed all sales and marketing focused content, including websites, emails, collateral, and merchandise</span>'
-	},
-	{
-		date: '<img src="img/story-logo-huddle.svg" id="" title="Huddle logo" alt="Huddle" />',
-		content: '<strong>Web Designer</strong></br><span class="font-small">Worked primarily on web and email, handling design, coding, QA, deployment, and platform integration</span>'
+		content: '<strong>Web/Brand Designer</strong></br><span class="font-small">Primary designer for the Marketing team, working across web, email, graphic, and print design</span>'
 	},
 	{
 		date: '<img src="img/story-logo-datasift.svg" id="" title="DataSift logo" alt="DataSift" />',
@@ -86,13 +55,16 @@ var myEvents = [
 	},
 	{
 		date: '<img src="img/story-logo-concirrus.svg" id="" title="Concirrus logo" alt="Concirrus" />',
-		content: '<strong>Senior Product Designer</strong></br><span class="font-small">Primary designer for Quest Automotive, and key part of introducing a cross-product design system</span>'
+		content: '<strong>Senior Product Designer (UI)</strong></br><span class="font-small">Primary designer for Quest Automotive, and key part of introducing a cross-product design system</span>'
+	},
+	{
+		date: '<img src="img/story-logo-proximie.svg" id="" title="Proximie logo" alt="Proximie" />',
+		content: '<strong>Senior Product Designer</strong></br><span class="font-small">Lead discovery, research, and design efforts for core new data insights functionality and features</span>'
+	},
+	{
+		date: '<img src="img/story-logo-next.svg" id="" title="The Next Adventure" alt="The Next Adventure" />',
+		content: '<strong>An Exciting New Role</strong></br><span class="font-small">I&#39;m currently looking for interesting new opportunities. If you&#39;re looking for a UI-leaning product designer, let&#39;s talk.</span>'
 	}
-	//,
-	//{
-	//	date: '<img src="img/story-logo-next.svg" id="" title="The Next Adventure" alt="The Next Adventure" />',
-	//	content: '<strong>An Exciting New Role</strong></br><span class="font-small">I&#39;m currently looking for interesting new opportunities. If you&#39;re looking for a multi-talented designer, let&#39;s talk.</span>'
-	//}
 ];
 
 $(window).on('resize scroll', function() {

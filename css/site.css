@@ -100,7 +100,7 @@ body {
 #journey a {
 	height: 50px;
 	width: 250px;
-	animation: colour-fade-bg 60s linear infinite;
+	background: #00263A;
 	text-decoration: none;
 	display: inline-block;
 	line-height: 50px;
@@ -270,6 +270,9 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+	#intro img {
+		display:block;
+	}
 	#journey {
 		padding: 72px 9px 72px 9px;
 	}

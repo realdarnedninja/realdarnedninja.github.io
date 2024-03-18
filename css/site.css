@@ -97,9 +97,9 @@ body {
 	color: #AAAAAA;
 }
 
-#journey a {
+.dl-btn {
 	height: 50px;
-	width: 250px;
+	width: 280px;
 	background: #00263A;
 	text-decoration: none;
 	display: inline-block;
@@ -107,7 +107,7 @@ body {
 	border-radius: 5px;
 }
 
-#journey a span {
+.dl-btn span {
 	color: #FFFFFF;
 	font-weight: 700;
 	line-height: 50px;
